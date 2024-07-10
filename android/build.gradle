@@ -36,6 +36,9 @@ android {
 //        main.java.srcDirs += 'lib/core/src/main/res'
         main.java.srcDirs += 'ib/ui/src/main/res'
     }
+    aaptOptions {
+        additionalParameters "--auto-add-overlay"
+    }
     defaultConfig {
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
